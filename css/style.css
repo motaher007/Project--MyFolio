@@ -1,0 +1,424 @@
+
+/*--common css starts here--*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;  
+}
+
+.button{
+    display: block;
+    color:rgb(19, 15, 15);
+    background-color: rgb(255, 247, 1) ;
+    width: 196px;
+    margin: auto;
+    padding: 20px 42px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    transition: .5s;
+}
+
+#banner .banner-content .button:hover{
+    background-color: #cfc91d;
+    color: black;
+}
+
+.heading{
+    color: #02918c;
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.heading::after{
+    content: '';
+    background-image: url(../image/heading-shape.png);
+    width: 162px;
+    height: 9px;
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*--common css ends here--*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*--nav starts here--*/
+nav{
+    background-color: #02918b;
+}
+
+nav .logo{
+    width: 50%;
+}
+
+nav .menu{
+    width: 50%;
+}
+
+nav ul{
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{ 
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 12px;
+    padding: 25px;
+    display: inline-block;
+}
+
+.align-center{
+    align-items: center;
+}
+/*--nav ends here--*/
+
+/*--banner starts here--*/
+#banner{
+   background-image: url(../image/MYFOLIO.jpg);
+   height: 725px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: rgba(0, 0, 0, 0.46);
+   background-blend-mode: multiply; 
+}
+
+#banner .container{
+     height: 100%;
+     margin: auto;     
+}
+
+#banner .row{
+    height: 100%; 
+}
+
+#banner .banner-content{
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+#banner .banner-content h4{ 
+   font-size: 28px;
+   font-weight: 400;   
+}
+
+#banner .banner-content h1{
+    font-size: 64px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+
+#banner .banner-content p{
+    font-size: 17px;
+    color: white;
+}
+
+#banner .banner-content img {
+   margin:50px auto;
+}
+/*--banner endss here--*/
+
+/*--about starts here--*/
+#about {
+    padding: 100px 0;
+}
+
+#about .heading{
+    text-align: center;   
+}
+
+#about .details{
+    color: #7e8287;
+    font-size: 16px;
+    text-align: center;
+    width: 880px;
+    margin: 80px auto;
+}
+
+#about .details span{
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.about_card{
+    width: 25%;
+    text-align: center;
+    border-right: .5px solid #7e8287 ;
+    padding: 30px 0;
+}
+
+.about_card span{
+    color: #02918b;
+    font-size: 30px;
+}
+
+.about_card h4{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    margin: 20px auto;
+}
+
+.about_card p{
+    font-size: 11px;
+    color:#7e8287;
+    padding: 0 45px;
+}
+
+.about_card:last-child{
+    border: none;
+}
+/*--about ends here--*/
+
+/*--service starts here--*/
+#service{
+    height: 725px;
+    background-image: url(../image/services.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+}
+
+#service .heading::after{
+    left: 0%;
+    transform: translateX(0);
+}
+
+#service .details{
+     font-size: 16px;
+     color: #7e8287;
+     width: 470px;
+     margin: 70px 0 55px 0;
+     line-height: 35px;
+}
+
+#service .row {
+    width: 50%;   
+}
+
+.service_card{
+    width: 50%;
+    text-align: left;
+    padding-bottom: 55px;    
+}
+
+.service_card span{
+    color: #02918b;
+    font-size: 30px;
+}
+
+.service_card h4{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    margin: 20px auto;
+}
+
+.service_card p{
+    font-size: 11px;
+    color:#7e8287;
+    margin: 0 0;
+    width: 160px;
+}
+/*--service ends here--*/
+
+/*--My work starts here--*/
+ #my-work .heading{
+    text-align: center;
+    margin-top: 110px;
+}
+
+#my-work p{
+    font-size: 16px;
+    color: #7e8287;
+    text-align: center;
+    width: 675px;
+    margin: 72px auto 0 auto;
+    padding-bottom: 100px;
+}
+
+.work_card{
+    width: 25%;
+    position: relative;
+}
+
+.work_card img {
+    width: 100%;
+    height: 100%;   
+}
+
+#my-work .work_card .animation .data{
+    color: white;
+    font-size: 14px;
+    width: 80%;
+    margin-top: 20px;
+}
+
+#my-work .work_card .animation {
+    position: absolute;
+    top: 0;
+    background-color: #02918acd;
+    inset: 20px;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    visibility: none;
+    opacity: 0;
+    transition: .5s;
+}
+
+#my-work .work_card:hover .animation{
+    visibility: visible;
+    opacity: 1;
+}
+/*--my work ends here--*/
+
+/*--contact me stars here--*/
+#contact_me .heading{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#contact_me p{
+    font-size: 16px;
+    color: #7e8287;
+    width: 676px;
+    margin:72px auto;
+    text-align: center;   
+}
+/*--contact me ends here--*/
+
+/*--bottom starts here--*/
+#bottom nav ul li {display: block; 
+    width: 915px;
+    margin: auto;
+    border-bottom: 1px solid white;   
+}
+    
+ #bottom nav ul {
+    text-align: center;
+}
+
+#bottom nav{
+    background-color: black;
+    padding: 30px 0;
+}
+ 
+#bottom nav ul li a{
+    background-color:black;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+    margin-top: 60px;
+    transition: .5s;    
+}
+
+#bottom nav ul .first {
+    width: 640px; 
+}
+
+#bottom nav ul li a:hover{
+    background-color:#cfc91d ;
+    color: black;
+}
+
+#bottom {
+    background-color: #0b0b0b;
+}
+
+#bottom p{
+    color: #7e8287;
+    font-size: 12px;
+    text-align: center;
+    padding: 50px 0 20px 0 ;
+}
+/*--bottom ends here--*/
+
+/*--form starts here--*/
+.contact-form{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin: auto;
+    width: 650px;
+}
+
+.form-block, .form-block-short{
+    display: block;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background: none;
+    border: none;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 20px;
+}
+
+.form-block{
+    width: 100%;
+}
+
+.form-block-short{
+    width: 70%;
+    margin: auto;
+}
+
+.contact-form a{
+    background-color: rgb(255, 247, 1);
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    color: #000000;
+    margin-top: 40px;
+    transition: .5s;
+    text-align: center;
+}
+
+.contact-form a:hover {
+    background-color: #cfc91d;
+    color: black;
+}
+/*--form ends here--*/
+
+input:focus-visible {
+    outline: none;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0 ;
+}
+
